@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cybersecurity Audit Evidence Reviewer</title>
+<style>
+:root{font-family:Arial,sans-serif;color:#172033;background:#f4f7fb}
+body{margin:0}.wrap{max-width:980px;margin:40px auto;padding:24px}
+header,.panel{background:white;border:1px solid #dce4ef;border-radius:16px;padding:24px;margin-bottom:18px}
+h1{margin-top:0;color:#12345a}.tag{display:inline-block;background:#e8f3ff;color:#14558b;padding:6px 10px;border-radius:20px;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:16px}
+li{margin:9px 0}.notice{border-left:4px solid #d18a25;padding:12px;background:#fff8e9}
+</style></head>
+<body><main class="wrap">
+<header><span class="tag">SDAIA Practical Capstone</span><h1>Cybersecurity Audit Evidence Reviewer</h1>
+<p>A web application prototype that helps an Internal Audit reviewer organize cybersecurity control requirements and supporting evidence in a dedicated review workspace.</p>
+</header>
+<section class="panel"><h2>Problem and objective</h2><p>Managing audit evidence across multiple files can be time-consuming. This prototype centralizes controls and evidence to simplify organization and retrieval.</p></section>
+<section class="panel"><h2>Core workflow</h2><div class="grid">
+<div class="card"><b>1. Define controls</b><p>Capture the control ID and requirement.</p></div>
+<div class="card"><b>2. Add evidence</b><p>Upload synthetic evidence files and check their readiness status.</p></div>
+<div class="card"><b>3. Organize</b><p>Manage controls and evidence within the review workspace.</p></div>
+<div class="card"><b>4. Retrieve</b><p>Return to saved controls and evidence after refreshing the page.</p></div>
+</div></section>
+<section class="panel"><h2>First pilot</h2><p>User Access Review (UAR) is the first synthetic pilot scenario. It is not the full scope of the product.</p></section>
+<section class="panel"><h2>Safety and limitations</h2><div class="notice">Demo data only. Do not upload personal, confidential, or production evidence. Use synthetic data only. The auditor remains responsible for verifying evidence and making audit decisions.</div></section>
+<section class="panel"><h2>Evaluation</h2><ul><li>Normal test: multiple controls and three evidence files accepted; controls and evidence retained after refresh.</li><li>Edge test: an empty file was flagged as unreadable; no content was extracted.</li><li>Messy test: not yet performed.</li><li>Estimated time: 60 minutes before and 40 minutes targeted after (33.3% expected saving; not measured).</li></ul></section>
+<section class="panel"><h2>Tools and live prototype</h2><p>Gemini: planning and specifications. Etlaq: application development and deployment.</p><p><a href="https://www.etlaq.sa/api/deploy/open-live?chatId=15fb2ab3-a006-416d-a76f-0eb50116922a">Open live prototype</a> · <a href="https://github.com/SDAIAAcademy">SDAIA Academy</a></p><p>This page is a project overview, not the operational application.</p></section>
+</main></body></html>
